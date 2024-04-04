@@ -1,0 +1,17 @@
+<!--<div id="plantilla-hbs">-->
+    {{#each articulos}}
+    <div class="container-fluid" data-id="{{this.id}}">
+        <div class="col-md-6 offset-md-3">
+            <div class="col">
+                <div class="card">
+                    <img src={{this.urlImagen}} class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title text-center">{{this.nombre}}</h2>
+                        <h3 class="card-text text-center">Precio: {{this.precio}}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+<!--</div>-->
